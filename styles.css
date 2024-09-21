@@ -1,0 +1,374 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-image: url(im3.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+header {
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fits without distortion */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+header h1 {
+    margin: 10px;
+}
+
+nav {
+    background: #0c0b0b;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.language-select {
+    display: flex;
+}
+
+.language-select button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+main {
+    margin-top: 20px;
+}
+
+/* About Section */
+#about {
+    margin-top: 50px;
+    color: orange;
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Vertically center the content */
+    padding: 20px;
+    max-width: 1200px; /* Adjusted for better layout with the image */
+    margin-left: 0; /* Ensures the section is positioned on the left */
+    border-left: 4px solid #4CAF50; /* Optional: adds a border for emphasis */
+    padding-left: 20px;
+ /* Optional: background color for better contrast */
+    border-radius: 8px; /* Optional: rounded corners */
+}
+
+.about-text {
+    flex: 1; /* Takes up available space */
+    margin-right: 20px; /* Space between text and image */
+}
+
+.about-pic {
+    margin-left: 60px;
+    margin-right: 40px;
+    width: 350px; /* Adjust size as needed */
+    height: 350px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fits without distortion */
+}
+
+/* skills */
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills .skill-bar {
+    margin-bottom: 10px;
+}
+
+.skills .skill-bar span {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.progress {
+    background-color: green;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: orange;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    line-height: 20px; /* Vertically center text */
+    font-weight: bold;
+    transition: width 0.4s ease;
+}
+
+.progress-bar::after {
+    content: attr(style);
+    position: absolute;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 5px;
+}
+
+/* projects */
+#projects {
+    padding: 20px;
+    background-color: #f4f4f4; /* Light background color for contrast */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px;
+}
+
+#projects h2 {
+    color: black; /* Dark color for the heading */
+    margin-bottom: 15px;
+    
+}
+
+#projects ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#projects ul li {
+    background-color: #e4b35a; /* White background for each project item */
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px; /* Rounded corners for each project item */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#projects ul li strong {
+    display: block;
+    color: #444; /* Darker color for project titles */
+    margin-bottom: 5px;
+}
+
+#projects ul li span {
+    display: block;
+    color: #777; /* Lighter color for dates */
+    margin-bottom: 10px;
+}
+
+#projects ul li p {
+    color: #555; /* Text color for descriptions */
+    margin-top: 5px;
+}
+
+
+/* education */
+#education {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color for contrast */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px;
+}
+
+#education h2 {
+    color: #333; /* Dark color for the heading */
+    margin-bottom: 15px;
+}
+
+#education ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#education ul li {
+    background-color: #fff; /* White background for each education item */
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px; /* Rounded corners for each item */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#education ul li strong {
+    display: block;
+    color: #444; /* Darker color for titles */
+    margin-bottom: 5px;
+}
+
+#education ul li span {
+    display: block;
+    color: #777; /* Lighter color for details */
+    margin-top: 5px;
+}
+
+
+
+/* certification */
+#awards {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color for contrast */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px;
+}
+
+#awards h2 {
+    color: #333; /* Dark color for the heading */
+    margin-bottom: 15px;
+}
+
+#awards ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#awards ul li {
+    background-color: #fff; /* White background for each award item */
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px; /* Rounded corners for each item */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#awards ul li strong {
+    display: block;
+    color: #444; /* Darker color for titles */
+    margin-bottom: 5px;
+}
+
+#awards ul li span {
+    display: block;
+    color: #777; /* Lighter color for details */
+    margin-top: 5px;
+}
+
+
+/* intro */
+#video {
+    padding: 20px;
+    background-color: #f4f4f4; /* Light background color for contrast */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px;
+    text-align: center; /* Center align content */
+}
+
+#video h2 {
+    color: #333; /* Dark color for the heading */
+    margin-bottom: 15px;
+}
+
+#video iframe {
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    max-width: 100%; 
+    height: auto; 
+}
+
+
+
+
+/* footer */
+
+footer {
+    padding: 20px;
+    background-color: #333; /* Dark background color for contrast */
+    color: #fff; /* White text color */
+    text-align: center; /* Center align text */
+    border-top: 4px solid #4CAF50; /* Optional: adds a border at the top */
+    position: fixed; /* Fixed positioning */
+    bottom: 0;
+    width: 100%; /* Full width of the viewport */
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px; /* Smaller font size for footer text */
+}
+
+
+/* General Section Styling */
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Section Headings */
+h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* List Styles */
+ul {
+    list-style-type: none;
+}
+
+.skills ul li {
+    background-color: gray;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.projects ul li,
+.courses ul li {
+    padding: 10px 0;
+}
+
+.projects ul li span,
+.courses ul li span {
+    display: block;
+    color: gray;
+    font-size: 0.9em;
+}
+
+/* Social Media Feed */
+.social-feed iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+/* Mobile-first styles */
+@media (min-width: 768px) {
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .flex-container > section {
+        flex: 1;
+        margin: 0 10px;
+    }
+}
